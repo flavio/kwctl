@@ -1932,7 +1932,7 @@ dependencies = [
  "policy-fetcher 0.4.0",
  "pretty-bytes",
  "prettytable-rs",
- "pulldown-cmark",
+ "pulldown-cmark 0.9.1",
  "regex",
  "serde",
  "serde_json",
@@ -2077,7 +2077,7 @@ dependencies = [
  "image",
  "libc",
  "mime",
- "pulldown-cmark",
+ "pulldown-cmark 0.8.0",
  "shell-words",
  "syntect",
  "terminal_size",
@@ -2774,6 +2774,17 @@ name = "pulldown-cmark"
 version = "0.8.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ffade02495f22453cd593159ea2f59827aae7f53fa8323f756799b670881dcf8"
+dependencies = [
+ "bitflags",
+ "memchr",
+ "unicase 2.6.0",
+]
+
+[[package]]
+name = "pulldown-cmark"
+version = "0.9.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "34f197a544b0c9ab3ae46c359a7ec9cbbb5c7bf97054266fecb7ead794a181d6"
 dependencies = [
  "bitflags",
  "memchr",
