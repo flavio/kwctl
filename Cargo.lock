@@ -421,7 +421,7 @@ checksum = "572f695136211188308f16ad2ca5c851a712c464060ae6974944458eb83880ba"
 [[package]]
 name = "burrego"
 version = "0.2.0"
-source = "git+https://github.com/kubewarden/policy-evaluator?tag=v0.4.15#b6707124a5f78c247c3d6c3c31a47f3cf089a197"
+source = "git+https://github.com/kubewarden/policy-evaluator?tag=v0.4.17#829363dfd99da82ec5ef55c4be6ccbd0548f3ecd"
 dependencies = [
  "anyhow",
  "base64 0.13.1",
@@ -2327,12 +2327,13 @@ dependencies = [
 
 [[package]]
 name = "kubewarden-policy-sdk"
-version = "0.8.3"
+version = "0.8.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3983ae33f19888b3bc085dc11d598a6eca47d1872547b32633c2753acd62cee1"
+checksum = "53e35080e4c03d52b6fba0d230f831651088c30d955167cd2062d82b586f4fb6"
 dependencies = [
  "anyhow",
  "cfg-if",
+ "chrono",
  "k8s-openapi",
  "num",
  "num-derive",
@@ -3130,6 +3131,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3b467d8082dcc552d4ca8c9aecdc94a09b0e092b961c542bb78b6feff8f1b3ea"
 dependencies = [
  "base64 0.13.1",
+ "chrono",
  "digest 0.10.6",
  "md-5",
  "num-bigint-dig",
@@ -3164,6 +3166,7 @@ version = "0.6.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2b7a3f07db0e5b22727979a992df18c78170c7c30279ab4149a395c0c3843832"
 dependencies = [
+ "chrono",
  "oid",
  "serde",
  "serde_bytes",
@@ -3304,13 +3307,14 @@ dependencies = [
 
 [[package]]
 name = "policy-evaluator"
-version = "0.4.15"
-source = "git+https://github.com/kubewarden/policy-evaluator?tag=v0.4.15#b6707124a5f78c247c3d6c3c31a47f3cf089a197"
+version = "0.4.17"
+source = "git+https://github.com/kubewarden/policy-evaluator?tag=v0.4.17#829363dfd99da82ec5ef55c4be6ccbd0548f3ecd"
 dependencies = [
  "anyhow",
  "base64 0.13.1",
  "burrego",
  "cached",
+ "chrono",
  "dns-lookup",
  "itertools",
  "json-patch",
@@ -3318,6 +3322,7 @@ dependencies = [
  "kube",
  "kubewarden-policy-sdk",
  "lazy_static",
+ "picky",
  "policy-fetcher",
  "serde",
  "serde_json",
