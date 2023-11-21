@@ -2483,7 +2483,7 @@ dependencies = [
  "tracing-subscriber",
  "url",
  "walrus",
- "wasmparser 0.116.1",
+ "wasmparser 0.118.0",
 ]
 
 [[package]]
@@ -5404,6 +5404,16 @@ name = "wasmparser"
 version = "0.116.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a58e28b80dd8340cb07b8242ae654756161f6fc8d0038123d679b7b99964fa50"
+dependencies = [
+ "indexmap 2.1.0",
+ "semver",
+]
+
+[[package]]
+name = "wasmparser"
+version = "0.118.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ebbb91574de0011ded32b14db12777e7dd5e9ea2f9d7317a1ab51a9495c75924"
 dependencies = [
  "indexmap 2.1.0",
  "semver",
