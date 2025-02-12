@@ -518,7 +518,7 @@ dependencies = [
 [[package]]
 name = "burrego"
 version = "0.3.4"
-source = "git+https://github.com/kubewarden/policy-evaluator?tag=v0.19.11#e9577caf16b5850ac6f70bbd8ac89df474a4c7eb"
+source = "git+https://github.com/flavio/policy-evaluator?branch=refactor-annotations#38b2d3268959a0adab151af30070013d4d7b42bd"
 dependencies = [
  "base64 0.22.1",
  "chrono",
@@ -3889,7 +3889,7 @@ dependencies = [
 [[package]]
 name = "policy-evaluator"
 version = "0.19.11"
-source = "git+https://github.com/kubewarden/policy-evaluator?tag=v0.19.11#e9577caf16b5850ac6f70bbd8ac89df474a4c7eb"
+source = "git+https://github.com/flavio/policy-evaluator?branch=refactor-annotations#38b2d3268959a0adab151af30070013d4d7b42bd"
 dependencies = [
  "anyhow",
  "base64 0.22.1",
@@ -3930,13 +3930,14 @@ dependencies = [
 [[package]]
 name = "policy-fetcher"
 version = "0.9.0"
-source = "git+https://github.com/kubewarden/policy-fetcher?tag=v0.9.0#ffc16c3f0c4400533c2130d44bdc46a3c7ede747"
+source = "git+https://github.com/flavio/policy-fetcher?branch=fix-http-registry-interactions#3ee94a35ffc2ae2e173b854a9c8988a0b08383b1"
 dependencies = [
  "async-trait",
  "base64 0.22.1",
  "cfg-if",
  "directories",
  "docker_credential",
+ "futures",
  "lazy_static",
  "oci-client",
  "path-slash",
